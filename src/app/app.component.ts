@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CreatePlaylistComponent } from './create-playlist/create-playlist.component';
-import { PlaylistElementComponent } from './playlist-element/playlist-element.component';
+import { CreatePlaylistComponent } from './playlist/create-playlist/create-playlist.component';
+import { PlaylistElementComponent } from './playlist/playlist-element/playlist-element.component';
 import { NavigationComponent } from '../shared/components/navigation/navigation.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { CatalogElementComponent } from './catalog/catalog-element/catalog-element.component';
+import { PlaylistComponent } from './playlist/playlist.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { CatalogElementComponent } from './catalog/catalog-element/catalog-eleme
   NavigationComponent,
   CatalogComponent,
   CatalogElementComponent,
+  PlaylistComponent,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
